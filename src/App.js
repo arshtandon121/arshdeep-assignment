@@ -7,17 +7,29 @@ import Navbar from './components/Navbar';
 import Newsletter from './components/Newsletter';
 import Form from './components/Form';
 
+
+
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Analytics />
-      <Form/>
-      <Newsletter />
-      <Cards />
-      <Footer />
-    </div>
+   <>
+
+    <Navbar />
+    <Hero />
+    <Analytics />
+    <Form/>
+    <Newsletter />
+    <Cards />
+    <Footer />
+
+   
+    
+   
+   
+   </>
+
+    
+   
+   
   );
 }
 
