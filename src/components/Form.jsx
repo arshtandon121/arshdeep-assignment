@@ -1,14 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 
 
 const Form = () => {
+
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Configure EmailJS service
+    emailj.sendForm(
+      'YOUR_SERVICE_ID',
+      'YOUR_TEMPLATE_ID',
+      e.target,
+      'YOUR_USER_ID'
+    )
+      .then((result) => {
+        console.log(result.text);
+        // Reset form fields
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.error(error.text);
+      });
+  };
+
+
+
   return (
-    <form className="max-w-lg mx-auto">
-        <div className="text-4xl text-white mt-14 mb-10 font-bold" >
+ <div className='w-full bg-white'>
+
+    <form   id='Contact' className=" bg-white max-w-lg mx-auto">
+        <div className="text-4xl text-black  mb-2 font-bold text-center " >
+            <label >
+             Any Queries ?  Contact us 
+             </label> 
+        </div>
+        <div className="text-2xl text-black mt-2 mb-5 text-center  " >
             <label>
-             Any Queries ? Contact Us
-            </label>
+             We will Contact You in 24 Hours
+             </label> 
         </div>
       <div className="mb-4">
         <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">
@@ -18,8 +55,10 @@ const Form = () => {
           type="text"
           id="name"
           name="name"
-          className="block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          className="block w-full  px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           placeholder="Enter your name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
       </div>
       <div className="mb-4">
@@ -30,6 +69,8 @@ const Form = () => {
           type="email"
           id="email"
           name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           placeholder="Enter your email"
         />
@@ -41,18 +82,16 @@ const Form = () => {
         <textarea
           id="message"
           name="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           rows="4"
           className="block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           placeholder="Enter your message"
         ></textarea>
       </div>
-      <button
-        type="submit"
-        className="inline-flex items-center px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-      >
-        Submit
-      </button>
+      <button type='submit' className='bg-[#00df9a] w-[140px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Submit</button>
     </form>
+ </div>
   )
 }
 
