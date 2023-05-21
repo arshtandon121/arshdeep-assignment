@@ -70,7 +70,7 @@ const AboutCompany = () => {
             Salesforce builds security into everything we do so businesses can
             focus on growing and innovating.
           </p>
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-4 rounded">
+          <button class="bg-blue-500  hover:bg-blue-600 text-white font-bold py-2 px-4 mt-4 rounded">
             Read More
           </button>
         </div>
@@ -82,8 +82,9 @@ const AboutCompany = () => {
             class="w-full h-auto rounded-md mb-4"
           />
           <h2 class="text-xl font-bold mb-2">Compliance</h2>
-          <p class="text-gray-600">Compliance engineered for the Cloud</p>
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-4 rounded">
+          <p class="text-gray-600">Compliance engineered for the Cloud and new technology which make it easier to get better results</p>
+        
+          <button class="bg-blue-500   hover:bg-blue-600 text-white font-bold py-2 px-4 mt-4 rounded">
             Read More
           </button>
         </div>
@@ -99,7 +100,7 @@ const AboutCompany = () => {
             Achieving high availability is a shared responsibility between
             Salesforce and our customers.
           </p>
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-4 rounded">
+          <button class="bg-blue-500  hover:bg-blue-600 text-white font-bold py-2 px-4 mt-4 rounded">
             Read More
           </button>
         </div>

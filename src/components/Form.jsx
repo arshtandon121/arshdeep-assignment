@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 
 
@@ -13,11 +14,11 @@ const Form = () => {
     e.preventDefault();
 
     // Configure EmailJS service
-    emailj.sendForm(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
-      e.target,
-      'YOUR_USER_ID'
+    emailjs.sendForm(
+      'service_n9bllgh',
+      'template_9qxtska',
+      name,
+      '3K0SXXvr3w3DCJm4x'
     )
       .then((result) => {
         console.log(result.text);
@@ -36,7 +37,6 @@ const Form = () => {
   return (
  <div className='w-full bg-white'>
 
-    <form   id='Contact' className=" bg-white max-w-lg mx-auto">
         <div className="text-4xl text-black  mb-2 font-bold text-center " >
             <label >
              Any Queries ?  Contact us 
@@ -47,6 +47,7 @@ const Form = () => {
              We will Contact You in 24 Hours
              </label> 
         </div>
+    <form   id='Contact' className=" bg-white max-w-lg mx-auto"  onSubmit={handleSubmit}>
       <div className="mb-4">
         <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">
           Name
@@ -89,7 +90,7 @@ const Form = () => {
           placeholder="Enter your message"
         ></textarea>
       </div>
-      <button type='submit' className='bg-[#00df9a] w-[140px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Submit</button>
+      <button  type='submit' className='bg-[#00df9a] w-[140px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Submit</button>
     </form>
  </div>
   )
