@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Newsletter from './components/Newsletter';
 import Form from './components/Form';
+import AboutCompany from './components/AboutCompany';
 
 
 
@@ -16,9 +17,10 @@ function App() {
     <Navbar />
     <Hero />
     <Analytics />
-    <Form/>
     <Newsletter />
+    <AboutCompany/>
     <Cards />
+    <Form/>
     <Footer />
 
    
