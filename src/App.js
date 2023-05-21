@@ -7,13 +7,13 @@ import Navbar from './components/Navbar';
 import Newsletter from './components/Newsletter';
 import Form from './components/Form';
 import AboutCompany from './components/AboutCompany';
-
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
   return (
    <>
-
+<ToastContainer/>
     <Navbar />
     <Hero />
     <Analytics />
