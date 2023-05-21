@@ -8,6 +8,7 @@ import Newsletter from './components/Newsletter';
 import Form from './components/Form';
 import AboutCompany from './components/AboutCompany';
 import { ToastContainer } from 'react-toastify';
+import Crouser from './components/Crouser';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Navbar />
     <Hero />
     <Analytics />
+    <Crouser/>
     <Newsletter />
     <AboutCompany/>
     <Cards />

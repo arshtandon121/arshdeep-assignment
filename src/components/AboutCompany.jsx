@@ -52,7 +52,7 @@ const AboutCompany = () => {
           <h2 class="text-xl font-bold mb-2">Status</h2>
           <p class="text-gray-600">
             Salesforce Status provide transparency around service availability
-            and performance
+            and performance for the best results
           </p>
           <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-4 rounded">
             Read More

@@ -182,7 +182,7 @@ const Form = () => {
   }
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full px-4 py-2 bg-white">
       <div className="text-4xl text-black  mb-2 font-bold text-center ">
         <label>Any Queries ? Contact us</label>
       </div>
