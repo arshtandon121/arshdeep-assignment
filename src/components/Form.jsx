@@ -113,7 +113,7 @@ const Form = () => {
       setNameOK(false);
       return;
     }
-
+ console.log(nameOK)
     setNameOK(true);
   };
 
@@ -126,16 +126,21 @@ const Form = () => {
       setEmailOK(false)
       return;
     }
+    console.log(emailOK)
     setEmailOK(true)
   };
 
   const handleMessageError = () => {
-    if (message === "") {
+    if (message ==="") {
       MessageError()
+      
       setMessageOK(false);
       return;
     }
-    setEmailOK(true)
+    console.log(messageOK)
+    console.log(message)
+    setMessageOK(true)
+    console.log(messageOK)
   };
 
 
