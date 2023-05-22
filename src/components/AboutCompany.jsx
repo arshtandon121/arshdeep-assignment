@@ -1,7 +1,7 @@
 import React from "react";
 import gif from "../assets/teacher.gif";
 import Typed from "react-typed";
-import { BsGraphUpArrow } from "react-icons/bs";
+
 
 const AboutCompany = () => {
   return (
