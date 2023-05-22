@@ -33,7 +33,7 @@ const Crouser = () => {
   return (
   
 
-    <div className="sm:w-[93%] md:w-[93%] lg:w-[93%]  w-[93%]  z-1" >
+    <div className="sm:w-[93%] md:w-[93%] lg:w-[93%]  w-[93%]  z-0" >
     <Slider {...settings}>
       <div className="flex justify-center text-center text-white items-center ">
         <img
